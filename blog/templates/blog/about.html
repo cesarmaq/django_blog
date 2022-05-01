@@ -1,6 +1,14 @@
 {% extends "blog/base.html" %}
 {% block content %}
-    <h1> Blog About!</h1>
+   <div class="jumbotron">
+    <h1 class="display-4">Hello, Welcome!</h1>
+    <p class="lead">This is a simple blog app, made with django framework!</p>
+    <hr class="my-4">
+    <p>Here you can post your ideias and share it with the rest of the world, or you can read other people ideias and share with rest of the world.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="{% url 'blog-home' %}" role="button">Learn more</a>
+    </p>
+  </div>
 {% endblock content %}
 
 
